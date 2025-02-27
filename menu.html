@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="menu.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Superglue&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio Loading...</title>
+  </head>
+  <body>
+    <!-- Static Overlay -->
+    <div id="static-overlay">
+      <img src="tv-foreground.png" alt="TV Foreground" class="tv-foreground" />
+      <img src="static.jpg" alt="Static Noise" class="static" />
+      <img src="creative-logo.png" alt="Creative Logo" class="creative-logo" />
+      <img src="star-logo.png" alt="Star Logo" class="star-logo" />
+      <img
+        src="portfolio-logo.png"
+        alt="Portfolio Logo"
+        class="portfolio-logo"
+      />
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <img src="loading-logo.png" alt="Loading Logo" class="loading-logo" />
+    </div>
+
+    <!-- Welcome Message -->
+    <div id="welcome-message">
+      <img src="welcome-logo.png" alt="Welcome Logo" class="welcome-logo" />
+    </div>
+
+    <!-- Main Content: New Game Button -->
+    <div id="main-content">
+      <img
+        src="new-game.png"
+        alt="New Game Button"
+        class="interactive-btn"
+        id="new-game-button"
+      />
+    </div>
+
+    <!--Corner Logo Container-->
+    <div class="second-logo-container" id="second-logo-container">
+      <img src="creative-logo.png" class="creative2" alt="Creative Logo" />
+      <img src="star-logo.png" class="star-logo2" alt="Star Logo" />
+      <img src="portfolio-logo.png" class="portfolio2" alt="Portfolio Logo" />
+    </div>
+
+    <!-- Portfolio Interface -->
+    <div id="portfolio-interface">
+      <div class="portfolio-container">
+        <!-- Programming Projects Section -->
+        <div class="portfolio-item" id="prog-projects">
+          <img
+            src="Programming Projects.png"
+            alt="Programming Projects"
+            class="portfolio-btn"
+            id="programming-projects-btn"
+            onclick="showProgrammingProjects()"
+          />
+        </div>
+
+        <!-- Artworks Section -->
+        <div class="portfolio-item" id="artworks">
+          <img
+            src="artworks.png"
+            alt="Artworks Button"
+            class="portfolio-btn"
+            id="artworks-btn"
+            onclick="showArtworks()"
+          />
+        </div>
+
+        <!-- Contact Me Section -->
+        <div class="portfolio-item" id="contact-me">
+          <img
+            src="contact me.png"
+            alt="Contact Me Button"
+            class="portfolio-btn"
+            id="contact-me-btn"
+            onclick="showContactMe()"
+          />
+        </div>
+
+        <!-- About Me -->
+        <div class="portfolio-item" id="about-me">
+          <img
+            src="About Me.png"
+            alt="About Me Button"
+            class="portfolio-btn"
+            id="about-me-btn"
+          />
+        </div>
+
+        <!-- Education -->
+        <div class="portfolio-item" id="education">
+          <img
+            src="Education.png"
+            alt="Education Button"
+            class="portfolio-btn"
+            id="education-btn"
+            onclick="showEducation()"
+          />
+        </div>
+
+        <!-- Work Experience -->
+        <div class="portfolio-item" id="work-experience">
+          <img
+            src="Work Experience.png"
+            alt="Work Experience Button"
+            class="portfolio-btn"
+            id="work-experience-btn"
+            onclick="showWorkExperience()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- TV NAME -->
+    <div class="tv-title" id="tv-title">
+      <img src="LiaTV.png" alt="Lia Tv Logo" class="lia-tv" id="lia-tv" />
+    </div>
+    
+    <script src="menu.js"></script>
+  </body>
+</html>

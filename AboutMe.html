@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="AboutMe.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Superglue&display=swap"
+      rel="stylesheet"
+    />
+    <title>About Me</title>
+  </head>
+  <body>
+    <!-- Static Overlay -->
+    <div id="static-overlay">
+      <img src="tv-foreground.png" alt="TV Foreground" class="tv-foreground" />
+      <img src="static.jpg" alt="Static Noise" class="static" />
+      <img src="star-logo.png" alt="Star Logo" class="star-logo" />
+    </div>
+
+    <!--Corner Logo Container-->
+    <div class="second-logo-container" id="second-logo-container">
+      <img src="creative-logo.png" class="creative2" alt="Creative Logo" />
+      <img src="star-logo.png" class="star-logo2" alt="Star Logo" />
+      <img src="portfolio-logo.png" class="portfolio2" alt="Portfolio Logo" />
+    </div>
+
+     <!-- TV NAME -->
+     <div class="tv-title" id="tv-title">
+      <img src="LiaTV.png" alt="Lia Tv Logo" class="lia-tv" id="lia-tv" />
+    </div>
+
+    <!-- About Me Section -->
+    <div id="about-me-section" class="hidden">
+
+      <!-- Go Back Button -->
+      <div class="go-back-btn" id="go-back-btn">
+        <img
+          src="back arrow.png"
+          class="back-arrow"
+          alt="Return to Main Menu"
+          onclick="showPortfolioInterface()"
+        />
+      </div>
+
+      <!-- About Me Title -->
+      <div class="about-me-title" id="about-me-title">
+        <img
+          src="abtme.png"
+          alt="About Me Title"
+          class="about-me"
+          id="about-me"
+        />
+      </div>
+
+      <!-- Self Portrait -->
+      <div class="self-portraight-image" id="self-portraight-image">
+        <img
+          src="self portrait.png"
+          class="self-portrait"
+          alt="Self Portait"
+          id="self-portrait"
+        />
+      </div>
+
+      <!-- Description -->
+      <div class="biography" id="biography">
+        <p class="background">
+          I’m a 23-year-old, half-Filipina, half-Guyanese creative from
+          Montreal, Canada. Growing up, I was always close to my brothers, which
+          naturally led me to share their interests—especially in video games,
+          anime, and all things nerd culture. These early influences shaped my
+          passion for storytelling, design, and interactive media, inspiring me
+          to explore the intersection of art and technology.
+        </p>
+        <p class="inspirations">
+          As I’ve grown, these interests fueled my newfound passion for game
+          programming and design, leading me to explore tools like Godot and
+          Unity, while also experimenting with languages like JavaScript, HTML,
+          CSS and React Native.
+        </p>
+        <p class="goals">
+          Moving forward, I aim to push the boundaries of interactive media,
+          using my skills to create immersive experiences that combine
+          storytelling and technology, with the aim of entering the video game
+          industry as a game programmer/designer or a software engineer.
+        </p>
+      </div>
+    </div>
+
+    <script src="AboutMe.js"></script>
+  </body>
+</html>
