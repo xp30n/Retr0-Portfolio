@@ -1,0 +1,176 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle, #000000, #727272);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#static-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.static {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.08;
+  z-index: 101;
+}
+
+.tv-foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: 102;
+}
+
+.star-logo {
+  position: absolute;
+  width: 175%;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  opacity: 0.3;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.second-logo-container {
+  position: relative;
+  transform: scale(0.5) translateY(-50px);
+  transform-origin: center;
+  z-index: 120;
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.star-logo2,
+.creative2,
+.portfolio2 {
+  position: absolute;
+  width: 690px;
+  top: 720px;
+  left: 588%;
+  transition: opacity 1s ease-in-out;
+  filter: drop-shadow(0px 0px 10px rgb(165, 160, 160));
+  z-index: 120;
+  opacity: 1;
+}
+
+.lia-tv {
+  font-family: "Superglue", sans-serif;
+  position: absolute;
+  top: 7%;
+  left: 6%;
+  width: 120px;
+  opacity: 0.5;
+  z-index: 130;
+}
+
+.back-arrow {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  z-index: 1200;
+  pointer-events: all;
+}
+
+.go-back-btn {
+  position: absolute;
+  top: 500px;
+  left: 70px;
+  z-index: 200;
+  cursor: pointer;
+}
+
+#projects {
+    padding: 30px 0;
+    z-index: 1200;
+  }
+  
+  
+  .projects-list {
+    font-family: 'IBM Plex Mono', sans-serif;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-left: -290px;
+    width: 500px;
+    margin-top: 7px;
+    aspect-ratio: 8;
+    z-index: 1200;
+  }
+  
+  
+  .projects-list div {
+    background: rgba(8, 8, 8, 0.658);
+    padding: 40px;
+    font-size: 12px;
+    font-weight: 300;
+    border-radius: 20px;
+    z-index: 1200;
+    transition: background 0.5s, transform 0.5s;
+    box-sizing: border-box;
+  }
+  
+  
+  .projects-list div h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    z-index: 1200;
+  }
+  
+  
+  .projects-list div p {
+    font-size: 13px;
+    text-align: center;
+    z-index: 1200;
+  }
+  
+  
+  .projects-list div a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 102, 218);
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+    z-index: 1200;
+  }
+  
+  
+  .projects-list div:hover {
+    background: rgba(12, 12, 88, 0.541);
+    transform: translateY(-10px);
+  }
+  

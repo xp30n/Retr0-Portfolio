@@ -90,27 +90,36 @@ window.addEventListener("load", function () {
     }, 2000);
   });
 
-  const programmingProjectsButton = document.getElementById(
-    "programming-projects-btn"
-  );
-  programmingProjectsButton.addEventListener("click", function () {
+  const programmingProjectsButton = document.getElementById("programming-projects-btn");
+  programmingProjectsButton.addEventListener("click", function(event) {
+    event.preventDefault();
+
     document.getElementById("artworks").classList.add("fade-out");
     document.getElementById("contact-me").classList.add("fade-out");
     document.getElementById("prog-projects").classList.add("fade-out");
     document.getElementById("about-me").classList.add("fade-out");
     document.getElementById("education").classList.add("fade-out");
     document.getElementById("work-experience").classList.add("fade-out");
-    document.getElementById("image-titles-container").classList.add("fade-out");
+
+    setTimeout(() => {
+      window.location.href = "Programming.html";
+    }, 500);
   });
 
   const artworksButton = document.getElementById("artworks-btn");
-  artworksButton.addEventListener("click", function () {
+  artworksButton.addEventListener("click", function(event) {
+    event.preventDefault();
+
     document.getElementById("artworks").classList.add("fade-out");
-    document.getElementById("game-prototype").classList.add("fade-out");
+    document.getElementById("contact-me").classList.add("fade-out");
     document.getElementById("prog-projects").classList.add("fade-out");
     document.getElementById("about-me").classList.add("fade-out");
     document.getElementById("education").classList.add("fade-out");
     document.getElementById("work-experience").classList.add("fade-out");
+
+    setTimeout(() => {
+      window.location.href = "Artworks.html";
+    }, 500);
   });
 
   const contactMeButton = document.getElementById("contact-me-btn");
@@ -130,7 +139,7 @@ window.addEventListener("load", function () {
   });
 
   const aboutMeButton = document.getElementById("about-me-btn");
-  aboutMeButton.addEventListener("click", function (event) {
+  aboutMeButton.addEventListener("click", function(event) {
     event.preventDefault();
 
     document.getElementById("about-me").classList.add("fade-out");
@@ -146,7 +155,7 @@ window.addEventListener("load", function () {
   });
 
   const educationButton = document.getElementById("education-btn");
-  educationButton.addEventListener("click", function (event) {
+  educationButton.addEventListener("click", function(event) {
     event.preventDefault();
 
     document.getElementById("artworks").classList.add("fade-out");
